@@ -20,12 +20,8 @@ type Tube8Video struct {
 }
 
 type Tube8Tags struct {
-	XMLName xml.Name   `xml:"tags"`
-	Tag     []Tube8Tag `xml:"tag"`
-}
-
-type Tube8Tag struct {
-	Tag string `xml:",chardata"`
+	XMLName xml.Name `xml:"tags"`
+	Tag     []string `xml:"tag"`
 }
 
 type Tube8Thumbs struct {
